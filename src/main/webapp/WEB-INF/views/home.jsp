@@ -1,6 +1,7 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,16 +149,16 @@
 <nav>
     <h2>Shyama <span>Traders</span></h2>
     <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact us?</a>
+        <a href="${pageContext.request.contextPath}/">Home</a>
+        <a href="${pageContext.request.contextPath}/about">About</a>
+        <a href="${pageContext.request.contextPath}/contact">Contact us</a>
     </div>
 </nav>
 
 <section class="hero">
     <h1>Welcome to <span>Shyama Traders</span></h1>
     <p class="subtitle">Your trusted partner for quality products and exceptional service. We deliver excellence with every transaction.</p>
-    <a href="/about" class="btn">Learn More</a>
+    <a href="${pageContext.request.contextPath}/about" class="btn">Learn More</a>
 </section>
 </body>
 </html>

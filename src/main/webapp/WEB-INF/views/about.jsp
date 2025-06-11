@@ -1,6 +1,7 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -312,9 +313,9 @@
 <nav>
     <h2>Shyama <span>Traders</span></h2>
     <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact us?</a>
+        <a href="${pageContext.request.contextPath}/">Home</a>
+        <a href="${pageContext.request.contextPath}/about">About</a>
+        <a href="${pageContext.request.contextPath}/contact">Contact us</a>
     </div>
 </nav>
 
@@ -332,7 +333,7 @@
             <p>Today, we stand as a testament to what can be achieved through hard work, integrity, and a customer-first approach.</p>
         </div>
         <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Our office">
+            <img src="${pageContext.request.contextPath}/resources/images/office.jpg" alt="Our office">
         </div>
     </div>
 
@@ -363,7 +364,7 @@
         <div class="team-grid">
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Rahul Sharma">
+                    <img src="${pageContext.request.contextPath}/resources/images/team1.jpg" alt="Rahul Sharma">
                 </div>
                 <div class="member-info">
                     <h3>Rahul Sharma</h3>
@@ -373,7 +374,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Priya Patel">
+                    <img src="${pageContext.request.contextPath}/resources/images/team2.jpg" alt="Priya Patel">
                 </div>
                 <div class="member-info">
                     <h3>Priya Patel</h3>
@@ -383,7 +384,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Amit Singh">
+                    <img src="${pageContext.request.contextPath}/resources/images/team3.jpg" alt="Amit Singh">
                 </div>
                 <div class="member-info">
                     <h3>Amit Singh</h3>
@@ -393,7 +394,7 @@
             </div>
             <div class="team-member">
                 <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Neha Gupta">
+                    <img src="${pageContext.request.contextPath}/resources/images/team4.jpg" alt="Neha Gupta">
                 </div>
                 <div class="member-info">
                     <h3>Neha Gupta</h3>
@@ -407,7 +408,7 @@
     <div class="cta-section">
         <h2>Ready to experience the Shyama Traders difference?</h2>
         <p>Join thousands of satisfied customers who trust us for quality products and exceptional service.</p>
-        <a href="/contact" class="btn">Contact Us Today</a>
+        <a href="${pageContext.request.contextPath}/contact" class="btn">Contact Us Today</a>
     </div>
 </div>
 </body>
